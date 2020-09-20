@@ -1,0 +1,10 @@
+.Button {
+	padding: 15px;
+	border-radius: 50%;
+	margin: 0.3vw;
+	border: 2px solid white;
+}
+
+.Button:hover {
+	opacity: 0.5;
+}

@@ -1,0 +1,43 @@
+.Container {
+	padding: 2% 0;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.1em;
+	width: 100%;
+	white-space: nowrap;
+	align-items: center;
+}
+
+.RowsPerPage {
+	display: flex;
+	align-items: center;
+	margin: 0 2%;
+}
+
+.RowsPerPage_text {
+	margin: 0 1vw;
+}
+
+.RowsPerPage_select {
+	border-radius: 8px;
+	font-size: 1em;
+}
+
+.RowsPerPage_select:focus {
+	outline: none;
+}
+
+.PageControls {
+	margin: 0 2vw;
+	display: flex;
+	align-items: center;
+}
+
+.Chevron {
+	font-size: 1.3em;
+	margin: 0 0.4vw;
+}
+
+.Chevron_inactive {
+	opacity: 0.5;
+}

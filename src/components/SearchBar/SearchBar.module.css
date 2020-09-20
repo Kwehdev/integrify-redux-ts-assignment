@@ -1,0 +1,22 @@
+.Container {
+	display: flex;
+	align-items: center;
+	width: 20%;
+	height: 100%;
+	margin-left: 2%;
+}
+
+.Input {
+	height: 60%;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.Input:focus {
+	outline: none;
+}
+
+::placeholder {
+	color: inherit;
+}

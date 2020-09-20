@@ -1,0 +1,19 @@
+.Container {
+	display: flex;
+	align-items: center;
+	padding: 2% 5%;
+	margin: 1% 0;
+}
+
+.Flag {
+	height: auto;
+	padding: 0 4%;
+	width: 18%;
+}
+
+.TrashCan {
+	cursor: pointer;
+	margin-left: auto;
+	fill: rgb(253, 18, 18);
+	font-size: 2em;
+}

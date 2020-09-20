@@ -1,0 +1,8 @@
+.Heart {
+	margin-left: 5%;
+	font-size: 1.3em;
+}
+
+.Heart_selected {
+	fill: #e74c3c;
+}

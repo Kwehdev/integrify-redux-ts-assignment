@@ -1,61 +1,30 @@
-// Action types
-export const ADD_PRODUCT = 'ADD_PRODUCT'
-export const REMOVE_PRODUCT = 'REMOVE_PRODUCT'
-export const TOGGLE_DIALOG = 'TOGGLE_DIALOG'
+import rootReducer from './redux/reducers';
 
-// Enum
-export enum DialogType {
-  SignIn = 'signIn',
-  SignUp = 'signUp',
-}
+//State Management
 
-// A product
-export type Product = {
-  id: string
-  name: string
-  price: number
-}
+export type RootState = ReturnType<typeof rootReducer>;
 
-export type AddProductAction = {
-  type: typeof ADD_PRODUCT
-  payload: {
-    product: Product,
-  }
-}
+//Themes
+export type ColorTheme = {
+	primaryColor: string;
+	lightenedPrimary: string;
+	darkenedPrimary: string;
+	secondaryColor: string;
+};
 
-export type RemoveProductAction = {
-  type: typeof REMOVE_PRODUCT
-  payload: {
-    product: Product,
-  }
-}
+export type CountryData = {
+	name: string;
+	altSpellings: string[];
+	borders: string[];
+	capital: string;
+	flag: string;
+	languages: Language[];
+	nativeName: string;
+	population: number;
+	region: string;
+	subregion: string;
+};
 
-export type ToggleDialogAction = {
-  type: typeof TOGGLE_DIALOG
-  payload: {
-    dialog: DialogType,
-  }
-}
-
-export type UiActions = ToggleDialogAction
-
-// Use this union in reducer
-export type ProductActions =
-  | AddProductAction
-  | RemoveProductAction
-
-export type ProductState = {
-  inCart: Product[]
-}
-
-// Using dynamic keys from an enum
-export type UiState = {
-  dialogOpen: {
-    [key in DialogType]?: boolean
-  }
-}
-
-export type AppState = {
-  product: ProductState,
-  ui: UiState,
-}
+export type Language = {
+	name: string;
+};
