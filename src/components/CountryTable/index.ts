@@ -1,1 +1,1 @@
-export { default } from './CountryTable';
+export { default } from "./CountryTable";

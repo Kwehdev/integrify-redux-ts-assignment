@@ -1,1 +1,1 @@
-export { default } from './TableSortToggle';
+export { default } from "./TableSortToggle";

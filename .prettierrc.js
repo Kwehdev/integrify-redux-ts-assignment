@@ -1,6 +1,0 @@
-module.exports = {
-	trailingComma: 'es5',
-	jsxBracketSameLine: false,
-	semi: false,
-	singleQuote: true,
-}

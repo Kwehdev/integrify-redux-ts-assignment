@@ -1,39 +1,39 @@
 .Container {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .Menu {
-	margin-top: 5vh;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	width: 60%;
-	padding: 3%;
+  margin-top: 5vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  padding: 3%;
 }
 
 .ReturnIcon {
-	position: absolute;
-	font-size: 3em;
-	cursor: pointer;
-	top: 15px;
-	left: 15px;
+  position: absolute;
+  font-size: 3em;
+  cursor: pointer;
+  top: 15px;
+  left: 15px;
 }
 
 .ReturnIcon:hover {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 .Title {
-	margin: 2% 0;
+  margin: 2% 0;
 }
 
 .SubTitle {
-	margin: 1% 0;
+  margin: 1% 0;
 }

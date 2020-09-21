@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import styles from './FlagImage.module.css';
+import styles from "./FlagImage.module.css";
 
 type FlagImageProps = {
-	src: string;
-	alt: string;
+  src: string;
+  alt: string;
 };
 
 export default function FlagImage({ src, alt }: FlagImageProps) {
-	return <img className={styles.Image} src={src} alt={alt} />;
+  return <img className={styles.Image} src={src} alt={alt} />;
 }

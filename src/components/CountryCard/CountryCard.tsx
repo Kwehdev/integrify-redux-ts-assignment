@@ -1,12 +1,12 @@
-import React from 'react'
-import { BsArrowReturnLeft, BsPeople } from 'react-icons/bs'
-import { FaCity, FaLanguage } from 'react-icons/fa'
-import { GoLocation } from 'react-icons/go'
-import { useHistory } from 'react-router-dom'
-import useTypedSelector from '../../hooks/useTypedSelector'
-import { CountryData } from '../../types'
+import React from "react";
+import { BsArrowReturnLeft, BsPeople } from "react-icons/bs";
+import { FaCity, FaLanguage } from "react-icons/fa";
+import { GoLocation } from "react-icons/go";
+import { useHistory } from "react-router-dom";
+import useTypedSelector from "../../hooks/useTypedSelector";
+import { CountryData } from "../../types";
 
-import styles from './CountryCard.module.css'
+import styles from "./CountryCard.module.css";
 
 export default function CountryCard({
   name,
@@ -20,17 +20,17 @@ export default function CountryCard({
   region,
   subregion,
 }: CountryData) {
-  const history = useHistory()
+  const history = useHistory();
   const {
     primaryColor,
     lightenedPrimary,
     darkenedPrimary,
     secondaryColor,
-  } = useTypedSelector((state) => state.theme)
+  } = useTypedSelector((state) => state.theme);
 
   const handleClick = () => {
-    history.push('/')
-  }
+    history.push("/");
+  };
 
   return (
     <div
@@ -48,7 +48,7 @@ export default function CountryCard({
         </div>
         <h1 className={styles.Name}>{name}</h1>
         <h2 className={styles.NativeName}>{nativeName}</h2>
-        <p className={styles.AltSpellings}>{altSpellings.join(', ')}</p>
+        <p className={styles.AltSpellings}>{altSpellings.join(", ")}</p>
         <div
           style={{ border: `2px solid ${darkenedPrimary}` }}
           className={styles.Info}
@@ -60,8 +60,8 @@ export default function CountryCard({
             <FaCity className={styles.Icon} /> Capital: {capital}
           </span>
           <span className={styles.Statistic}>
-            <FaLanguage className={styles.Icon} />{' '}
-            {languages.map(({ name }) => name).join(', ')}
+            <FaLanguage className={styles.Icon} />{" "}
+            {languages.map(({ name }) => name).join(", ")}
           </span>
           <span className={styles.Statistic}>
             <BsPeople className={styles.Icon} /> {population.toLocaleString()}
@@ -69,5 +69,5 @@ export default function CountryCard({
         </div>
       </div>
     </div>
-  )
+  );
 }

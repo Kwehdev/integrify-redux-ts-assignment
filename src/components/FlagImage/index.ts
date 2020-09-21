@@ -1,1 +1,1 @@
-export { default } from './FlagImage';
+export { default } from "./FlagImage";
