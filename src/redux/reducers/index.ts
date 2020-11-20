@@ -1,12 +1,17 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from "redux";
 
-import product from './product'
-import ui from './ui'
+import countryReducer from "./country";
+import favouriteReducer from "./favourite";
+import filterReducer from "./filter";
+import sortReducer from "./sort";
+import themeReducer from "./theme";
 
-const createRootReducer = () =>
-  combineReducers({
-    product,
-    ui,
-  })
+const rootReducer = combineReducers({
+  countries: countryReducer,
+  theme: themeReducer,
+  filterQuery: filterReducer,
+  sortOptions: sortReducer,
+  favourites: favouriteReducer,
+});
 
-export default createRootReducer
+export default rootReducer;
